@@ -1,0 +1,41 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #111827;
+  min-height: 100vh;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
